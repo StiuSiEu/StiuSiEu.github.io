@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href=".\style.css">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
@@ -8,16 +8,17 @@
           $(document).on("click","#Contact",function(e){
             e.preventDefault();
             $("#bodyAcasa").load("contact.html")
-            var myStylesLocation = "/contact=style.css";
+            var myStylesLocation = "/contactStyle.css";
 
           });
           $(document).on("click","#Poze",function(e){
             e.preventDefault();
             $("#bodyAcasa").load("poze.html")
+            var myStylesLocation = "/pozeStyle.css";
           });
           $(document).on("click","#Acasa",function(e){
             e.preventDefault();
-            $("#bodyAcasa").load("acasa.html")
+            $("#bodyAcasa").load("index.html")
           });
 
     });
