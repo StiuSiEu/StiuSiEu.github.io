@@ -8,7 +8,7 @@
           $(document).on("click","#Contact",function(e){
             e.preventDefault();
             $("#bodyAcasa").load("contact.html")
-            $('<link rel="stylesheet" type="text/css" href=".\contact-style.css" >').appendTo("head");
+            var myStylesLocation = "/contact=style.css";
 
           });
           $(document).on("click","#Poze",function(e){
