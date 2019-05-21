@@ -14,6 +14,10 @@
             e.preventDefault();
             $("#bodyAcasa").load("poze.html")
           });
+          $(document).on("click","#Acasa",function(e){
+            e.preventDefault();
+            $("#bodyAcasa").load("acasa.html")
+          });
 
     });
     </script>
@@ -24,7 +28,7 @@
     <div class="navbar">
       <ul>
         <li>
-          Acasa
+         <a href="#" id="Acasa">Acasa</a> 
         </li>
         <li>
           <a href="#" id="Poze">Poze</a>
