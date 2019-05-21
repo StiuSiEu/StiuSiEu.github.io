@@ -8,6 +8,7 @@
           $(document).on("click","#Contact",function(e){
             e.preventDefault();
             $("#bodyAcasa").load("contact.html")
+            $('head').append('<link rel="stylesheet" type="text/css" href=".\contact-style.css">');
 
           });
           $(document).on("click","#Poze",function(e){
@@ -40,7 +41,7 @@
  
   
    
-<div class="culoare" id="bodyAcasa">
+<div id="bodyAcasa">
 <p>Main-body</p></div>
 </body>
 </html>
