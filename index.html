@@ -5,15 +5,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("button").click("#ID1",function() {
-          $("#div1").load("test.html");
+        $("button").click("#Contact",function() {
           $("#bodyAcasa").load("contact.html");
         });
       });
-    </script>-
+    </script>
+     <script>
+            $(document).ready(function() {
+              $("button").click("#Poze",function() {
+                $("#bodyAcasa").load("poze.html");
+              });
+            });
+          </script>
   </head>
   <body>
-      
+
   </div>
     <div class="navbar">
       <ul>
@@ -33,6 +39,7 @@
 <div class="bodyAcasa" id="bodyAcasa">
 <p>Main body</p></div>
 
-<button id="ID1">Contact</button>
+<button id="Contact">Contact</button>
+<button id="Poze">Poze</button>
   </body>
 </html>
