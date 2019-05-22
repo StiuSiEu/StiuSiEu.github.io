@@ -1,77 +1,67 @@
 <!DOCTYPE html>
 <html>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href=".\style.css">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href=".\style.css" />
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-          $(document).on("click","#Contact",function(e){
-            e.preventDefault();
-            $("#bodyAcasa").load("contact.html")
-            var myStylesLocation = "/contactStyle.css";
-
-          });
-          $(document).on("click","#Poze",function(e){
-            e.preventDefault();
-            $("#bodyAcasa").load("poze.html")
-            var myStylesLocation = "/pozeStyle.css";
-          });
-          $(document).on("click","#Acasa",function(e){
-            e.preventDefault();
-            $("#bodyAcasa").load("acasa.html")
-            var myStylesLocation = "/acasaStyle.css";
-          });
-
-    });
+        $(document).on("click", "#Contact", function(e) {
+          e.preventDefault();
+          $("#bodyAcasa").load("contact.html");
+          var myStylesLocation = "/contactStyle.css";
+        });
+        $(document).on("click", "#Poze", function(e) {
+          e.preventDefault();
+          $("#bodyAcasa").load("poze.html");
+          var myStylesLocation = "/pozeStyle.css";
+        });
+        $(document).on("click", "#Acasa", function(e) {
+          e.preventDefault();
+          $("#bodyAcasa").load("acasa.html");
+          var myStylesLocation = "/acasaStyle.css";
+        });
+      });
     </script>
   </head>
   <body>
-
-
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">@Logo to be inserted</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Acasa <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" id="Acasa"
+              >Acasa <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Poze</a>
+            <a class="nav-link" href="#" id="Poze">Poze</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#" id="Contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
-
-
-
-
-
-  </div>
-    <div class="navbar">
-      <ul>
-        <li>
-         <a href="#" id="Acasa">Acasa</a> 
-        </li>
-        <li>
-          <a href="#" id="Poze">Poze</a>
-        </li>
-        <li><a href="#" id="Contact">Contact</a></li>
-      </ul>
+    <div class="culoarealbastra" id="bodyAcasa">
+      <p>Main-body</p>
     </div>
-  </div>
- 
-  
-   
-<div class="culoarealbastra" id="bodyAcasa" >
-<p >Main-body</p></div>
-</body>
+  </body>
 </html>
